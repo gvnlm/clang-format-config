@@ -1,0 +1,53 @@
+# Do not allow short enums on a single line.
+AllowShortEnumsOnASingleLine: false
+
+# The column limit.
+ColumnLimit: 100
+
+# Break before operators.
+BreakBeforeBinaryOperators: All
+
+# A function call’s arguments will either be all on the same line or will have one line each.
+BinPackArguments: false
+
+# Outdent access modifiers such that they share the same indentation as the class they are declared in.
+AccessModifierOffset: -2
+
+# Never merge functions into a single line.
+AllowShortFunctionsOnASingleLine: None
+
+# Always put each constructor initializer on its own line.
+PackConstructorInitializers: Never
+
+AllowShortCaseLabelsOnASingleLine: true
+
+# Only applies if AllowShortCaseLabelsOnASingleLine is true.
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+  AlignCaseColons: false
+
+# Always break after an open bracket, if the parameters don’t fit on a single line. Closing brackets will be placed on a new line.
+AlignAfterOpenBracket: BlockIndent
+
+# Merge lambda into a single line if the lambda is argument of a function.
+AllowShortLambdasOnASingleLine: Inline
+
+# Align pointer/reference to the left.
+PointerAlignment: Left
+
+# Always break after template declaration.
+BreakTemplateDeclarations: Yes
+
+# Break constructor initializers before the colon and commas, and align the commas with the colon.
+BreakConstructorInitializers: BeforeComma
+
+# Penalty for putting the return type of a function onto its own line.
+PenaltyReturnTypeOnItsOwnLine: 1000
+
+# Break after return type based on PenaltyReturnTypeOnItsOwnLine.
+BreakAfterReturnType: Automatic
+
+# If true, clang-format adds missing namespace end comments for namespaces and fixes invalid existing ones. This doesn’t affect short namespaces, which are controlled by ShortNamespaceLines.
+FixNamespaceComments: false
